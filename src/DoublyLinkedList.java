@@ -31,6 +31,8 @@ public class DoublyLinkedList<T>{
                 this.top = newNode;
                 this.size++;
             }
+        }else{
+            System.out.println("Lista cheia!");
         }
     }
 
@@ -101,14 +103,14 @@ public class DoublyLinkedList<T>{
         int mid = this.size/2;
         Node<T> current;
 
-        if(mid < this.size) {
+        if(index < mid) {
             current = this.base;
             for (int i = 0; i < index; i++) {
                 current = current.getNext();
             }
         }else{
             current = this.top;
-            for (int i = this.size; i > index; i++) {
+            for (int i = this.size; i > index; i--) {
                 current = current.getPrev();
             }
         }

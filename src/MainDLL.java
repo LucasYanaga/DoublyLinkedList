@@ -1,6 +1,6 @@
 public class MainDLL {
     public static void main(String[] args) {
-        DoublyLinkedList list = new DoublyLinkedList(10);
+        DoublyLinkedList list = new DoublyLinkedList(100);
 
         //Add
         list.add(1);
@@ -31,5 +31,22 @@ public class MainDLL {
         //remove mid
         list.remove(1);
         list.print();
+
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.add(9);
+        list.print();
+
+        System.out.println(list.getNode(10));
     }
 }
