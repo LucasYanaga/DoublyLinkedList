@@ -33,20 +33,10 @@ public class MainDLL {
         list.print();
 
         list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
-        list.add(9);
         list.print();
 
-        System.out.println(list.getNode(10));
+        list.add(2, 69);
+        list.print();
+
     }
 }

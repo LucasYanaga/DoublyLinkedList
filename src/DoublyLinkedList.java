@@ -105,12 +105,12 @@ public class DoublyLinkedList<T>{
 
         if(index < mid) {
             current = this.base;
-            for (int i = 0; i < index; i++) {
+            for (int i = 0; i < index + 1; i++) {
                 current = current.getNext();
             }
         }else{
             current = this.top;
-            for (int i = this.size; i > index; i--) {
+            for (int i = this.size; i > index + 1; i--) {
                 current = current.getPrev();
             }
         }
